@@ -307,7 +307,31 @@ $(document).ready(() => {
       loop: true,
       navText: ['<svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.22266 1.33337L1.35846 9.19757L9.22266 17.0618" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>', '<svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.77734 17.6666L9.64154 9.80243L1.77734 1.93823"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>']
     });
+    $window.scroll(function () {
+      let e = $("table");
+
+      if (e.length === 1) {
+        $('.swipe-table').length === 0 && $("body").append('<div class="swipe-table"><span class="swipe_table"></span></div>');
+        let a = e.offset();
+        let t = e.innerHeight();
+        let i = a.top + t;
+        let s = $(window).scrollTop() + $(window).height();
+        let l = a.top + (t - 100) / 2;
+        i < s && ($(".swipe-table").css({
+          top: l
+        }), $('.swipe-table').fadeIn('slow'), setTimeout(() => {
+          $('.swipe-table').fadeOut('slow');
+        }, 2500));
+      }
+    });
   }
+
+  $("#pOrder").on('click', function () {
+    $("#pPopup").fadeIn();
+  });
+  $('#pForm .close-popup').on('click', function () {
+    $("#pPopup").fadeOut();
+  });
 });
 
 /***/ }),

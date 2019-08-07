@@ -7,7 +7,7 @@
 		<meta name="description" content="Описание страницы">
 		<meta name="theme-color" content="#FFCC00">
 		<meta name="format-detection" content="telephone=no">
-		<title>Главная страница</title>
+		<title>Каталог продукции</title>
 		<link rel="icon" href="./favicon.ico">
 		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -15,9 +15,9 @@
 		<link rel="manifest" href="/site.webmanifest">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="theme-color" content="#ffffff">
-		<link rel="stylesheet" type="text/css" href="./css/main.css?v=1565213768343"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/main.css?v=1565215592315"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
-	<body>
+	<body class="inner-page">
 		<header>
 			<div class="header-top">
 				<div class="container">
@@ -121,21 +121,9 @@
 				</div>
 			</div>
 		</header>
-		<div class="content">
-			<div class="wrapper">
-				<section class="slider">
-					<div class="slider-wrap">
-						<div class="slider-catalog">
-							<div class="container">
-								<div class="slider-catalog-wrap">
-									<div class="slider-catalog-items"><a class="slider-catalog-item" href="images/content/item-1.png" title="PD121-02"><img src="images/content/item-1.png" alt="item-${i+1}"></a><a class="slider-catalog-item" href="images/content/item-2.png" title="PD121-02"><img src="images/content/item-2.png" alt="item-${i+1}"></a><a class="slider-catalog-item" href="images/content/item-3.png" title="PD121-02"><img src="images/content/item-3.png" alt="item-${i+1}"></a><a class="slider-catalog-item" href="images/content/item-4.png" title="PD121-02"><img src="images/content/item-4.png" alt="item-${i+1}"></a>
-										<div class="slider-catalog-item"><a class="slider-catalog-item__close" href="javascript:void(0);" id="sliderClose"></a></div>
-									</div>
-									<div class="slider-catalog-link"><a href="#">Перейти в каталог</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="slider-svg"><svg id="anim" viewBox="0 0 1897 842" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<section class="slider">
+			<div class="slider-wrap">
+				<div class="slider-svg"><svg id="anim" viewBox="0 0 1897 842" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M29 137.156H354.584M1548.36 1L1253.1 137.156H943.391M1548.36 1H1843M1548.36 1V731.014" stroke="#DFAE30" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M1252.95 137.156V600.109M1252.95 600.109L1547.3 731.014H1896.07M1252.95 600.109H962.766" stroke="#DFAE30" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M1181.15 197.831L1182.64 194.846C1182.64 194.846 1183.46 191.861 1188.23 191.861C1193 191.861 1196.06 195.592 1196.06 195.592L1209.49 206.779C1209.49 206.779 1213.59 209.971 1213.59 217.219V613.433" stroke="#DFAE30" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -322,165 +310,152 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1264.36 594.581V142.684L1537.29 23.1458L1537.98 713.394L1264.36 594.581Z" stroke="#DFAE30" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
-						</div>
-						<div class="slider-one" style="background-image: url('images/content/pvh.png')" id="pvh"></div>
-						<div class="slider-two" style="background-image: url('images/content/texture.png')" id="texture"></div>
-						<div class="slider-three" style="background-image: url('images/content/lak.png')" id="lak"></div>
-						<div class="slider-tooltip"><div class="tooltip-one tooltip">
-<span>3</span>
-<p>PVC (пвх) основа</p>
-</div>
-<div class="tooltip-two tooltip">
-<span>2</span>
-<p>эскиз, Текстура</p>
-</div>
-<div class="tooltip-three tooltip">
-<span>1</span>
-<p>UV (верхний слой лак)</p>
-</div>
+				</div>
+			</div>
+			<div class="slider-inner">
+				<div class="logo"><img src="logo.svg" alt="logo"></div>
+				<div class="slider-inner-text">
+					<h1>Добро пожаловать в ZH Group</h1>
+					<p>ZH Group известная так же как ЧП GIJDUVON MASHHURASI имеет многолетний опыт работы в области поставки декоративных листов ПВХ. Декоративные листы ПВХ широко используются в любых внутренних отделочных работах.</p>
+				</div>
+			</div>
+		</section>
+		<div class="content">
+			<div class="crumbs">
+				<div class="container">
+					<ul>
+						<li><a href="/" title="На главную">Главная</a></li>
+						<li><a href="#" title="Каталог продукции">Каталог продукции</a></li>
+						<li>PD121-06</li>
+					</ul>
+				</div>
+			</div>
+			<div class="product">
+				<div class="container">
+					<div class="product-items">
+						<div class="product-img"><img src="images/content/item-6.png" alt="item-6"></div>
+						<div class="product-info"><a class="back-link" href="#"><span><svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 7.5H1M1 7.5L7.52326 1M1 7.5L7.52326 14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>Вернуться на главную</a>
+							<div class="product-info-desc">
+								<div class="product-info-name">PD121-06</div>
+								<div class="product-info-list">
+									<ul>
+										<li><b>Артикул: </b><span>&nbsp;№123456</span></li>
+									</ul>
+									<ul>
+										<li><b>Характеристики:</b></li>
+										<li><span>Страна производитель Узбекистан материал PVH</span></li>
+									</ul>
+									<ul>
+										<li><b>Размер:</b></li>
+										<li><span>ширина 150 см <br> высота 220 см <br> толщина 10 см</span></li>
+									</ul>
+									<ul>
+										<li><b>Вес:</b></li>
+										<li>   <span>лист 20 кг</span></li>
+									</ul>
+								</div>
+								<div class="product-info-btn">  
+									<button class="btn" type="button" id="pOrder">заказать образец продукции<span></span></button>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="slider-inner">
-						<div class="logo"><img src="logo.svg" alt="logo"></div>
-						<div class="slider-inner-text">
-							<h1>Добро пожаловать в ZH Group</h1>
-							<p>ZH Group известная так же как ЧП GIJDUVON MASHHURASI имеет многолетний опыт работы в области поставки декоративных листов ПВХ. Декоративные листы ПВХ широко используются в любых внутренних отделочных работах.</p><a class="btn" href="#">Узнать больше<span></span></a>
-						</div>
-					</div>
-				</section>
-				<section class="benefit">
+				</div>
+				<div class="catalog-seo">
 					<div class="container">
-						<div class="benefit-title title">
-							<h1>Преимущества</h1>
-						</div>
-						<div class="benefit-items owl-carousel">
-							<div class="benefit-item">
-								<div class="benefit-item-icon"><span class="icon" style="background-image: url('images/icons/icon01.svg');"></span></div>
-								<div class="benefit-item-title">
-									<p>Экологичность</p>
-								</div>
-								<div class="benefit-item-txt"><span>Таким образом рамки и место обучения кадров способствует подготовки и реализации форм развития.</span></div>
-							</div>
-							<div class="benefit-item">
-								<div class="benefit-item-icon"><span class="icon" style="background-image: url('images/icons/icon02.svg');"></span></div>
-								<div class="benefit-item-title">
-									<p>Влагоустойчивость</p>
-								</div>
-								<div class="benefit-item-txt"><span>Таким образом рамки и место обучения кадров способствует подготовки и реализации форм развития.</span></div>
-							</div>
-							<div class="benefit-item">
-								<div class="benefit-item-icon"><span class="icon" style="background-image: url('images/icons/icon03.svg');"></span></div>
-								<div class="benefit-item-title">
-									<p>Термоустойчивость</p>
-								</div>
-								<div class="benefit-item-txt"><span>Таким образом рамки и место обучения кадров способствует подготовки и реализации форм развития.</span></div>
-							</div>
-							<div class="benefit-item">
-								<div class="benefit-item-icon"><span class="icon" style="background-image: url('images/icons/icon04.svg');"></span></div>
-								<div class="benefit-item-title">
-									<p>Ультратонкость</p>
-								</div>
-								<div class="benefit-item-txt"><span>Таким образом рамки и место обучения кадров способствует подготовки и реализации форм развития.</span></div>
-							</div>
-							<div class="benefit-item">
-								<div class="benefit-item-icon"><span class="icon" style="background-image: url('images/icons/icon05.svg');"></span></div>
-								<div class="benefit-item-title">
-									<p>Износостойкость</p>
-								</div>
-								<div class="benefit-item-txt"><span>Таким образом рамки и место обучения кадров способствует подготовки и реализации форм развития.</span></div>
-							</div>
-							<div class="benefit-item">
-								<div class="benefit-item-icon"><span class="icon" style="background-image: url('images/icons/icon06.svg');"></span></div>
-								<div class="benefit-item-title">
-									<p>Высокопрочность</p>
-								</div>
-								<div class="benefit-item-txt"><span>Таким образом рамки и место обучения кадров способствует подготовки и реализации форм развития.</span></div>
-							</div>
+						<div class="default-section">
+							<h2>SEO текст</h2>
+							<p>Распишите о разделах сайта, укажите, где и что находиться, что можно найти в фотогалерее, каталоге продукции. Текст необходимо составлять живой, чтобы посетитель читал его быстро и легко, заинтересовываясь с каждой строчкой. Не стоит перегружать текст специальными терминами или писать объемный материал. Создайте лаконичное и интересное описание Вашей компании, полностью раскрывающее вид деятельности, достижения и плюсы.</p>
 						</div>
 					</div>
-				</section>
-				<section class="catalog-slider">
-					<div class="container">
-						<div class="catalog-slider-title title">
-							<h1>Каталог продукции</h1>
+				</div>
+			</div>
+		</div>
+		<div class="product-popup" id="pPopup">
+			<div class="product-popup-wrap">
+				<div class="product-popup-bg">
+					<div class="product-popup-form">
+						<div class="product-popup-form__title">
+							<h5>Заказать образец продукции</h5>
+							<p>Для того что бы заказать образец данной продукции, <br>просто заполните эту форму</p>
 						</div>
-						<div class="catalog-slider-items owl-carousel">
-							<div class="catalog-slider-item"><a class="catalog-slider-link" href="#">
-									<div class="catalog-slider-img"><img src="images/content/item-1.png" alt="item-1"></div>
-									<p>PD121-02</p>
-									<div class="btn">Узнать больше<span></span></div></a></div>
-							<div class="catalog-slider-item"><a class="catalog-slider-link" href="#">
-									<div class="catalog-slider-img"><img src="images/content/item-2.png" alt="item-2"></div>
-									<p>PD121-13</p>
-									<div class="btn">Узнать больше<span></span></div></a></div>
-							<div class="catalog-slider-item"><a class="catalog-slider-link" href="#">
-									<div class="catalog-slider-img"><img src="images/content/item-3.png" alt="item-3"></div>
-									<p>PD121-02</p>
-									<div class="btn">Узнать больше<span></span></div></a></div>
-							<div class="catalog-slider-item"><a class="catalog-slider-link" href="#">
-									<div class="catalog-slider-img"><img src="images/content/item-4.png" alt="item-4"></div>
-									<p>PD121-03</p>
-									<div class="btn">Узнать больше<span></span></div></a></div>
-							<div class="catalog-slider-item"><a class="catalog-slider-link" href="#">
-									<div class="catalog-slider-img"><img src="images/content/item-5.png" alt="item-5"></div>
-									<p>PD121-05</p>
-									<div class="btn">Узнать больше<span></span></div></a></div>
-							<div class="catalog-slider-item"><a class="catalog-slider-link" href="#">
-									<div class="catalog-slider-img"><img src="images/content/item-6.png" alt="item-6"></div>
-									<p>PD121-06</p>
-									<div class="btn">Узнать больше<span></span></div></a></div>
-							<div class="catalog-slider-item"><a class="catalog-slider-link" href="#">
-									<div class="catalog-slider-img"><img src="images/content/item-7.png" alt="item-7"></div>
-									<p>PD121-13</p>
-									<div class="btn">Узнать больше<span></span></div></a></div>
-							<div class="catalog-slider-item"><a class="catalog-slider-link" href="#">
-									<div class="catalog-slider-img"><img src="images/content/item-8.png" alt="item-8"></div>
-									<p>PD121-06</p>
-									<div class="btn">Узнать больше<span></span></div></a></div>
-						</div>
-						<div class="catalog-slider-order">
-							<div class="title">
-								<h1>Заказать бесплатный образец</h1>
-							</div>
-							<div class="catalog-slider-form">
-								<form action="/" method="GET" id="iForm">
-									<div class="catalog-slider-groups">
-										<div class="input-group">
-											<input type="text" name="name" placeholder="ФИО" id="name" autocomplete="off"><span class="icon"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<form action="/" method="GET" id="pForm"><span class="close-popup"></span>
+							<div class="input-group">
+								<input type="text" name="name" placeholder="ФИО" id="name" autocomplete="off"><span class="icon"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.46447 13.4645C2.40215 12.5268 3.67392 12 5 12H13C14.3261 12 15.5979 12.5268 16.5355 13.4645C17.4732 14.4021 18 15.6739 18 17V19C18 19.5523 17.5523 20 17 20C16.4477 20 16 19.5523 16 19V17C16 16.2044 15.6839 15.4413 15.1213 14.8787C14.5587 14.3161 13.7956 14 13 14H5C4.20435 14 3.44129 14.3161 2.87868 14.8787C2.31607 15.4413 2 16.2043 2 17V19C2 19.5523 1.55228 20 1 20C0.447715 20 0 19.5523 0 19V17C0 15.6739 0.526784 14.4021 1.46447 13.4645Z"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2C7.34315 2 6 3.34315 6 5C6 6.65685 7.34315 8 9 8C10.6569 8 12 6.65685 12 5C12 3.34315 10.6569 2 9 2ZM4 5C4 2.23858 6.23858 0 9 0C11.7614 0 14 2.23858 14 5C14 7.76142 11.7614 10 9 10C6.23858 10 4 7.76142 4 5Z"/>
 </svg></span>
-										</div>
-										<div class="input-group">
-											<input type="text" name="org" placeholder="Организация" id="org" autocomplete="off"><span class="icon"><svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M3 6C2.44772 6 2 6.44772 2 7V17C2 17.5523 2.44772 18 3 18H19C19.5523 18 20 17.5523 20 17V7C20 6.44772 19.5523 6 19 6H3ZM0 7C0 5.34315 1.34315 4 3 4H19C20.6569 4 22 5.34315 22 7V17C22 18.6569 20.6569 20 19 20H3C1.34315 20 0 18.6569 0 17V7Z"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M6.87868 0.87868C7.44129 0.31607 8.20435 0 9 0H13C13.7956 0 14.5587 0.31607 15.1213 0.87868C15.6839 1.44129 16 2.20435 16 3V19C16 19.5523 15.5523 20 15 20C14.4477 20 14 19.5523 14 19V3C14 2.73478 13.8946 2.48043 13.7071 2.29289C13.5196 2.10536 13.2652 2 13 2H9C8.73478 2 8.48043 2.10536 8.29289 2.29289C8.10536 2.48043 8 2.73478 8 3V19C8 19.5523 7.55228 20 7 20C6.44772 20 6 19.5523 6 19V3C6 2.20435 6.31607 1.44129 6.87868 0.87868Z"/>
+							</div>
+							<div class="input-group">
+								<input type="text" name="org" placeholder="Организация" id="org" autocomplete="off"><span class="icon"><svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="24">
+<rect width="20" height="24"/>
+<path d="M18.6602 10.1953H17.1133C16.7573 10.1953 16.4688 10.4838 16.4688 10.8398V12.054C16.1794 11.9139 15.8559 11.834 15.5145 11.829C15.7623 11.4105 15.861 10.9392 15.8014 10.4387L14.9989 3.6983C14.8158 2.15999 13.3832 1 11.6665 1H8.6382C6.92146 1 5.48889 2.15999 5.3056 3.6983L4.50313 10.4387C4.44371 10.9392 4.5424 11.4105 4.78998 11.829C4.44875 11.834 4.12531 11.9139 3.83594 12.054V10.8398C3.83594 10.4838 3.54724 10.1953 3.19141 10.1953H1.64453C1.28853 10.1953 1 10.4838 1 10.8398C1 11.1958 1.28853 11.4844 1.64453 11.4844H2.54688V13.7834C2.54688 13.8213 2.55074 13.8581 2.55711 13.8941C2.55057 13.9638 2.54688 14.0341 2.54688 14.1055C2.54688 15.3613 3.56839 16.3828 4.82422 16.3828H9.50781V19.6051H5.64079C4.64563 19.6051 3.83594 20.4148 3.83594 21.41V22.3551C3.83594 22.7111 4.12447 22.9997 4.48047 22.9997C4.83647 22.9997 5.125 22.7111 5.125 22.3551V21.41C5.125 21.1257 5.35629 20.8942 5.64079 20.8942H9.50781V22.3555C9.50781 22.7115 9.79634 23 10.1523 23C10.5083 23 10.7969 22.7115 10.7969 22.3555V20.8942H14.6639C14.9482 20.8942 15.1797 21.1257 15.1797 21.41V22.3555C15.1797 22.7115 15.4682 23 15.8242 23C16.1802 23 16.4688 22.7115 16.4688 22.3555V21.41C16.4688 20.4148 15.6591 19.6051 14.6639 19.6051H10.7969V16.3828H15.4805C16.7361 16.3828 17.7578 15.3611 17.7578 14.1055C17.7578 14.0341 17.7541 13.9636 17.7476 13.8941C17.754 13.8581 17.7578 13.8213 17.7578 13.7834V11.4844H18.6602C19.0162 11.4844 19.3047 11.1958 19.3047 10.8398C19.3047 10.4838 19.0162 10.1953 18.6602 10.1953ZM5.78313 10.5911L6.5856 3.85071C6.69168 2.96045 7.57405 2.28906 8.6382 2.28906H11.6665C12.7306 2.28906 13.613 2.96028 13.7191 3.85071L14.5216 10.5911C14.5597 10.9112 14.4585 11.176 14.2035 11.4246C13.9287 11.6923 13.5752 11.8281 13.1528 11.8281H7.15192C6.72945 11.8281 6.37596 11.6923 6.10136 11.4246C5.84624 11.176 5.74519 10.9112 5.78313 10.5911ZM15.4805 15.0938H4.82422C4.27922 15.0938 3.83594 14.6505 3.83594 14.1055C3.83594 13.5605 4.27922 13.1172 4.82422 13.1172H15.4805C16.0255 13.1172 16.4688 13.5605 16.4688 14.1055C16.4688 14.6505 16.0255 15.0938 15.4805 15.0938Z"/>
+</mask>
+<path d="M18.6602 10.1953H17.1133C16.7573 10.1953 16.4688 10.4838 16.4688 10.8398V12.054C16.1794 11.9139 15.8559 11.834 15.5145 11.829C15.7623 11.4105 15.861 10.9392 15.8014 10.4387L14.9989 3.6983C14.8158 2.15999 13.3832 1 11.6665 1H8.6382C6.92146 1 5.48889 2.15999 5.3056 3.6983L4.50313 10.4387C4.44371 10.9392 4.5424 11.4105 4.78998 11.829C4.44875 11.834 4.12531 11.9139 3.83594 12.054V10.8398C3.83594 10.4838 3.54724 10.1953 3.19141 10.1953H1.64453C1.28853 10.1953 1 10.4838 1 10.8398C1 11.1958 1.28853 11.4844 1.64453 11.4844H2.54688V13.7834C2.54688 13.8213 2.55074 13.8581 2.55711 13.8941C2.55057 13.9638 2.54688 14.0341 2.54688 14.1055C2.54688 15.3613 3.56839 16.3828 4.82422 16.3828H9.50781V19.6051H5.64079C4.64563 19.6051 3.83594 20.4148 3.83594 21.41V22.3551C3.83594 22.7111 4.12447 22.9997 4.48047 22.9997C4.83647 22.9997 5.125 22.7111 5.125 22.3551V21.41C5.125 21.1257 5.35629 20.8942 5.64079 20.8942H9.50781V22.3555C9.50781 22.7115 9.79634 23 10.1523 23C10.5083 23 10.7969 22.7115 10.7969 22.3555V20.8942H14.6639C14.9482 20.8942 15.1797 21.1257 15.1797 21.41V22.3555C15.1797 22.7115 15.4682 23 15.8242 23C16.1802 23 16.4688 22.7115 16.4688 22.3555V21.41C16.4688 20.4148 15.6591 19.6051 14.6639 19.6051H10.7969V16.3828H15.4805C16.7361 16.3828 17.7578 15.3611 17.7578 14.1055C17.7578 14.0341 17.7541 13.9636 17.7476 13.8941C17.754 13.8581 17.7578 13.8213 17.7578 13.7834V11.4844H18.6602C19.0162 11.4844 19.3047 11.1958 19.3047 10.8398C19.3047 10.4838 19.0162 10.1953 18.6602 10.1953ZM5.78313 10.5911L6.5856 3.85071C6.69168 2.96045 7.57405 2.28906 8.6382 2.28906H11.6665C12.7306 2.28906 13.613 2.96028 13.7191 3.85071L14.5216 10.5911C14.5597 10.9112 14.4585 11.176 14.2035 11.4246C13.9287 11.6923 13.5752 11.8281 13.1528 11.8281H7.15192C6.72945 11.8281 6.37596 11.6923 6.10136 11.4246C5.84624 11.176 5.74519 10.9112 5.78313 10.5911ZM15.4805 15.0938H4.82422C4.27922 15.0938 3.83594 14.6505 3.83594 14.1055C3.83594 13.5605 4.27922 13.1172 4.82422 13.1172H15.4805C16.0255 13.1172 16.4688 13.5605 16.4688 14.1055C16.4688 14.6505 16.0255 15.0938 15.4805 15.0938Z"/>
+<path d="M16.4688 12.054L16.3816 12.234L16.6687 12.3731V12.054H16.4688ZM15.5145 11.829L15.3424 11.7271L15.1667 12.0239L15.5116 12.0289L15.5145 11.829ZM15.8014 10.4387L16 10.415V10.415L15.8014 10.4387ZM14.9989 3.6983L14.8003 3.72194V3.72195L14.9989 3.6983ZM5.3056 3.6983L5.10701 3.67464L5.10701 3.67466L5.3056 3.6983ZM4.50313 10.4387L4.30453 10.415L4.30452 10.4151L4.50313 10.4387ZM4.78998 11.829L4.79293 12.0289L5.13767 12.0239L4.96211 11.7271L4.78998 11.829ZM3.83594 12.054H3.63594V12.3731L3.92312 12.234L3.83594 12.054ZM2.54688 11.4844H2.74688V11.2844H2.54688V11.4844ZM2.55711 13.8941L2.75624 13.9129L2.75876 13.886L2.75406 13.8593L2.55711 13.8941ZM9.50781 16.3828H9.70781V16.1828H9.50781V16.3828ZM9.50781 19.6051V19.8051H9.70781V19.6051H9.50781ZM9.50781 20.8942H9.70781V20.6942H9.50781V20.8942ZM10.7969 20.8942V20.6942H10.5969V20.8942H10.7969ZM10.7969 19.6051H10.5969V19.8051H10.7969V19.6051ZM10.7969 16.3828V16.1828H10.5969V16.3828H10.7969ZM17.7476 13.8941L17.5506 13.8593L17.5459 13.886L17.5485 13.9129L17.7476 13.8941ZM17.7578 11.4844V11.2844H17.5578V11.4844H17.7578ZM5.78313 10.5911L5.58453 10.5675L5.58452 10.5676L5.78313 10.5911ZM6.5856 3.85071L6.38701 3.82704L6.387 3.82706L6.5856 3.85071ZM13.7191 3.85071L13.9177 3.82706L13.9177 3.82705L13.7191 3.85071ZM14.5216 10.5911L14.7202 10.5675V10.5675L14.5216 10.5911ZM14.2035 11.4246L14.3431 11.5679L14.3431 11.5678L14.2035 11.4246ZM6.10136 11.4246L6.24098 11.2814L6.24094 11.2814L6.10136 11.4246ZM18.6602 9.99531H17.1133V10.3953H18.6602V9.99531ZM17.1133 9.99531C16.6468 9.99531 16.2688 10.3734 16.2688 10.8398H16.6687C16.6687 10.5943 16.8677 10.3953 17.1133 10.3953V9.99531ZM16.2688 10.8398V12.054H16.6687V10.8398H16.2688ZM16.5559 11.874C16.2406 11.7213 15.8885 11.6345 15.5175 11.629L15.5116 12.0289C15.8234 12.0335 16.1181 12.1065 16.3816 12.234L16.5559 11.874ZM15.6866 11.9309C15.9573 11.4737 16.0646 10.9581 16 10.415L15.6028 10.4623C15.6573 10.9203 15.5673 11.3473 15.3424 11.7271L15.6866 11.9309ZM16 10.415L15.1975 3.67466L14.8003 3.72195L15.6028 10.4623L16 10.415ZM15.1975 3.67466C15.0005 2.02004 13.4679 0.8 11.6665 0.8V1.2C13.2986 1.2 14.631 2.29993 14.8003 3.72194L15.1975 3.67466ZM11.6665 0.8H8.6382V1.2H11.6665V0.8ZM8.6382 0.8C6.83679 0.8 5.30415 2.02004 5.10701 3.67464L5.5042 3.72197C5.67363 2.29993 7.00614 1.2 8.6382 1.2V0.8ZM5.10701 3.67466L4.30453 10.415L4.70173 10.4623L5.5042 3.72195L5.10701 3.67466ZM4.30452 10.4151C4.24006 10.9581 4.34738 11.4737 4.61785 11.9308L4.96211 11.7271C4.73743 11.3474 4.64736 10.9203 4.70173 10.4623L4.30452 10.4151ZM4.78703 11.629C4.4162 11.6345 4.06405 11.7213 3.74876 11.874L3.92312 12.234C4.18656 12.1064 4.48129 12.0335 4.79293 12.0289L4.78703 11.629ZM4.03594 12.054V10.8398H3.63594V12.054H4.03594ZM4.03594 10.8398C4.03594 10.3734 3.65766 9.99531 3.19141 9.99531V10.3953C3.43682 10.3953 3.63594 10.5943 3.63594 10.8398H4.03594ZM3.19141 9.99531H1.64453V10.3953H3.19141V9.99531ZM1.64453 9.99531C1.17807 9.99531 0.8 10.3734 0.8 10.8398H1.2C1.2 10.5943 1.39899 10.3953 1.64453 10.3953V9.99531ZM0.8 10.8398C0.8 11.3063 1.17807 11.6844 1.64453 11.6844V11.2844C1.39899 11.2844 1.2 11.0854 1.2 10.8398H0.8ZM1.64453 11.6844H2.54688V11.2844H1.64453V11.6844ZM2.34687 11.4844V13.7834H2.74688V11.4844H2.34687ZM2.34687 13.7834C2.34687 13.835 2.35214 13.8835 2.36017 13.929L2.75406 13.8593C2.74933 13.8326 2.74688 13.8076 2.74688 13.7834H2.34687ZM2.35799 13.8754C2.35093 13.9506 2.34687 14.0272 2.34687 14.1055H2.74688C2.74688 14.041 2.75021 13.977 2.75624 13.9129L2.35799 13.8754ZM2.34687 14.1055C2.34687 15.4718 3.45793 16.5828 4.82422 16.5828V16.1828C3.67885 16.1828 2.74688 15.2508 2.74688 14.1055H2.34687ZM4.82422 16.5828H9.50781V16.1828H4.82422V16.5828ZM9.30781 16.3828V19.6051H9.70781V16.3828H9.30781ZM9.50781 19.4051H5.64079V19.8051H9.50781V19.4051ZM5.64079 19.4051C4.53517 19.4051 3.63594 20.3044 3.63594 21.41H4.03594C4.03594 20.5253 4.75609 19.8051 5.64079 19.8051V19.4051ZM3.63594 21.41V22.3551H4.03594V21.41H3.63594ZM3.63594 22.3551C3.63594 22.8216 4.01401 23.1997 4.48047 23.1997V22.7997C4.23492 22.7997 4.03594 22.6007 4.03594 22.3551H3.63594ZM4.48047 23.1997C4.94693 23.1997 5.325 22.8216 5.325 22.3551H4.925C4.925 22.6007 4.72601 22.7997 4.48047 22.7997V23.1997ZM5.325 22.3551V21.41H4.925V22.3551H5.325ZM5.325 21.41C5.325 21.2361 5.46679 21.0942 5.64079 21.0942V20.6942C5.24579 20.6942 4.925 21.0152 4.925 21.41H5.325ZM5.64079 21.0942H9.50781V20.6942H5.64079V21.0942ZM9.30781 20.8942V22.3555H9.70781V20.8942H9.30781ZM9.30781 22.3555C9.30781 22.8219 9.68588 23.2 10.1523 23.2V22.8C9.9068 22.8 9.70781 22.601 9.70781 22.3555H9.30781ZM10.1523 23.2C10.6188 23.2 10.9969 22.8219 10.9969 22.3555H10.5969C10.5969 22.601 10.3979 22.8 10.1523 22.8V23.2ZM10.9969 22.3555V20.8942H10.5969V22.3555H10.9969ZM10.7969 21.0942H14.6639V20.6942H10.7969V21.0942ZM14.6639 21.0942C14.8378 21.0942 14.9797 21.2361 14.9797 21.41H15.3797C15.3797 21.0152 15.0587 20.6942 14.6639 20.6942V21.0942ZM14.9797 21.41V22.3555H15.3797V21.41H14.9797ZM14.9797 22.3555C14.9797 22.8219 15.3578 23.2 15.8242 23.2V22.8C15.5787 22.8 15.3797 22.601 15.3797 22.3555H14.9797ZM15.8242 23.2C16.2907 23.2 16.6687 22.8219 16.6687 22.3555H16.2688C16.2688 22.601 16.0698 22.8 15.8242 22.8V23.2ZM16.6687 22.3555V21.41H16.2688V22.3555H16.6687ZM16.6687 21.41C16.6687 20.3044 15.7695 19.4051 14.6639 19.4051V19.8051C15.5486 19.8051 16.2688 20.5253 16.2688 21.41H16.6687ZM14.6639 19.4051H10.7969V19.8051H14.6639V19.4051ZM10.9969 19.6051V16.3828H10.5969V19.6051H10.9969ZM10.7969 16.5828H15.4805V16.1828H10.7969V16.5828ZM15.4805 16.5828C16.8466 16.5828 17.9578 15.4716 17.9578 14.1055H17.5578C17.5578 15.2507 16.6257 16.1828 15.4805 16.1828V16.5828ZM17.9578 14.1055C17.9578 14.0272 17.9538 13.9505 17.9467 13.8754L17.5485 13.9129C17.5545 13.9768 17.5578 14.041 17.5578 14.1055H17.9578ZM17.9445 13.929C17.9526 13.8835 17.9578 13.835 17.9578 13.7834H17.5578C17.5578 13.8076 17.5554 13.8326 17.5506 13.8593L17.9445 13.929ZM17.9578 13.7834V11.4844H17.5578V13.7834H17.9578ZM17.7578 11.6844H18.6602V11.2844H17.7578V11.6844ZM18.6602 11.6844C19.1266 11.6844 19.5047 11.3063 19.5047 10.8398H19.1047C19.1047 11.0854 18.9057 11.2844 18.6602 11.2844V11.6844ZM19.5047 10.8398C19.5047 10.3734 19.1266 9.99531 18.6602 9.99531V10.3953C18.9057 10.3953 19.1047 10.5943 19.1047 10.8398H19.5047ZM5.98172 10.6147L6.7842 3.87435L6.387 3.82706L5.58453 10.5675L5.98172 10.6147ZM6.7842 3.87437C6.87524 3.11034 7.64723 2.48906 8.6382 2.48906V2.08906C7.50087 2.08906 6.50813 2.81056 6.38701 3.82704L6.7842 3.87437ZM8.6382 2.48906H11.6665V2.08906H8.6382V2.48906ZM11.6665 2.48906C12.6575 2.48906 13.4295 3.11019 13.5205 3.87437L13.9177 3.82705C13.7966 2.81037 12.8038 2.08906 11.6665 2.08906V2.48906ZM13.5205 3.87435L14.323 10.6147L14.7202 10.5675L13.9177 3.82706L13.5205 3.87435ZM14.323 10.6147C14.3529 10.8659 14.2797 11.071 14.0639 11.2814L14.3431 11.5678C14.6372 11.2811 14.7665 10.9565 14.7202 10.5675L14.323 10.6147ZM14.0639 11.2814C13.8304 11.5089 13.5289 11.6281 13.1528 11.6281V12.0281C13.6216 12.0281 14.027 11.8758 14.3431 11.5679L14.0639 11.2814ZM13.1528 11.6281H7.15192V12.0281H13.1528V11.6281ZM7.15192 11.6281C6.77582 11.6281 6.47428 11.5089 6.24098 11.2814L5.96175 11.5678C6.27765 11.8758 6.68307 12.0281 7.15192 12.0281V11.6281ZM6.24094 11.2814C6.02501 11.071 5.95196 10.8659 5.98174 10.6146L5.58452 10.5676C5.53843 10.9564 5.66746 11.2811 5.96179 11.5679L6.24094 11.2814ZM15.4805 14.8938H4.82422V15.2937H15.4805V14.8938ZM4.82422 14.8938C4.38968 14.8938 4.03594 14.54 4.03594 14.1055H3.63594C3.63594 14.7609 4.16876 15.2937 4.82422 15.2937V14.8938ZM4.03594 14.1055C4.03594 13.6709 4.38968 13.3172 4.82422 13.3172V12.9172C4.16876 12.9172 3.63594 13.45 3.63594 14.1055H4.03594ZM4.82422 13.3172H15.4805V12.9172H4.82422V13.3172ZM15.4805 13.3172C15.915 13.3172 16.2688 13.6709 16.2688 14.1055H16.6687C16.6687 13.45 16.1359 12.9172 15.4805 12.9172V13.3172ZM16.2688 14.1055C16.2688 14.54 15.915 14.8938 15.4805 14.8938V15.2937C16.1359 15.2937 16.6687 14.7609 16.6687 14.1055H16.2688Z" mask="url(#path-1-outside-1)"/>
 </svg></span>
-										</div>
-										<div class="input-group">
-											<input type="text" name="city" placeholder="Узбекистан/Ташкенет" id="city" autocomplete="off"><span class="icon"><svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 1.66668C6.69653 1.66668 4.96692 2.36906 3.69167 3.61932C2.41643 4.86957 1.7 6.56527 1.7 8.3334C1.7 10.9151 3.41338 13.4203 5.29206 15.3645C6.21402 16.3186 7.13887 17.0997 7.83418 17.6425C8.09295 17.8445 8.31897 18.0128 8.5 18.144C8.68103 18.0128 8.90705 17.8445 9.16583 17.6425C9.86113 17.0997 10.786 16.3186 11.7079 15.3645C13.5866 13.4203 15.3 10.9151 15.3 8.3334C15.3 6.56527 14.5836 4.86957 13.3083 3.61932C12.0331 2.36906 10.3035 1.66668 8.5 1.66668ZM8.5 19.1668C8.02851 19.8602 8.02829 19.8601 8.02804 19.8599L8.02562 19.8583L8.01995 19.8546L8.00047 19.8417C7.98392 19.8306 7.96031 19.8148 7.93012 19.7943C7.86975 19.7533 7.78299 19.6936 7.67362 19.6161C7.45496 19.4613 7.14541 19.2353 6.7752 18.9463C6.03613 18.3693 5.04848 17.5358 4.05794 16.5107C2.11162 14.4966 0 11.585 0 8.3334C5.06639e-08 6.12324 0.895533 4.00361 2.48959 2.4408C4.08365 0.87798 6.24566 0 8.5 0C10.7543 0 12.9163 0.87798 14.5104 2.4408C16.1045 4.00361 17 6.12324 17 8.3334C17 11.585 14.8884 14.4966 12.9421 16.5107C11.9515 17.5358 10.9639 18.3693 10.2248 18.9463C9.85459 19.2353 9.54504 19.4613 9.32638 19.6161C9.21701 19.6936 9.13025 19.7533 9.06988 19.7943C9.03969 19.8148 9.01608 19.8306 8.99953 19.8417L8.98005 19.8546L8.97439 19.8583L8.97259 19.8595C8.97235 19.8596 8.9715 19.8602 8.5 19.1668ZM8.5 19.1668L8.9715 19.8602C8.68598 20.0468 8.31356 20.0465 8.02804 19.8599L8.5 19.1668Z"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 6.66672C7.56112 6.66672 6.8 7.41291 6.8 8.3334C6.8 9.25388 7.56112 10.0001 8.5 10.0001C9.43888 10.0001 10.2 9.25388 10.2 8.3334C10.2 7.41291 9.43888 6.66672 8.5 6.66672ZM5.1 8.3334C5.1 6.49243 6.62223 5.00004 8.5 5.00004C10.3778 5.00004 11.9 6.49243 11.9 8.3334C11.9 10.1744 10.3778 11.6668 8.5 11.6668C6.62223 11.6668 5.1 10.1744 5.1 8.3334Z"/>
-</svg></span>
-										</div>
-										<div class="input-group">
-											<input type="tel" name="name" placeholder="Номер телефона" id="phone" autocomplete="off"><span class="icon"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							</div>
+							<div class="input-group">
+								<input type="tel" name="tel" placeholder="+998 (__) ___-__-__" id="phone" autocomplete="off"><span class="icon"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M17.5004 20.125C17.4129 20.125 17.3254 20.125 17.2379 20.125C14.4379 19.775 11.6379 18.8125 9.27539 17.325C7.08789 15.925 5.16289 14 3.76289 11.8125C2.18789 9.45 1.22539 6.65 0.962891 3.85C0.962891 3.15 1.13789 2.45 1.57539 1.925C2.01289 1.4 2.62539 1.05 3.32539 0.9625C3.41289 0.9625 3.50039 0.9625 3.58789 0.9625H6.21289C7.52539 0.9625 8.66289 1.925 8.83789 3.2375C8.92539 4.025 9.10039 4.8125 9.36289 5.5125C9.71289 6.475 9.45039 7.525 8.75039 8.3125L8.13789 8.925C9.18789 10.5 10.5004 11.9 12.1629 12.95L12.7754 12.3375C13.4754 11.6375 14.6129 11.375 15.5754 11.725C16.2754 11.9875 17.0629 12.1625 17.8504 12.25C19.1629 12.425 20.1254 13.5625 20.1254 14.875V17.5C20.1254 18.2 19.8629 18.9 19.3379 19.3375C18.8129 19.775 18.2004 20.125 17.5004 20.125ZM6.21289 2.7125H3.58789C3.32539 2.7125 3.06289 2.8875 2.88789 3.0625C2.80039 3.2375 2.71289 3.4125 2.71289 3.675C2.97539 6.2125 3.85039 8.6625 5.25039 10.85C6.56289 12.8625 8.22539 14.6125 10.2379 15.8375C12.4254 17.2375 14.8754 18.1125 17.4129 18.375C17.7629 18.375 17.9379 18.2875 18.1129 18.1125C18.2879 17.9375 18.3754 17.7625 18.3754 17.5V14.875C18.3754 14.4375 18.0254 14.0875 17.5879 14C16.7129 13.9125 15.8379 13.65 14.9629 13.3C14.6129 13.2125 14.2629 13.2125 14.0004 13.475L12.8629 14.6125C12.6004 14.875 12.1629 14.9625 11.8129 14.7875C9.45039 13.475 7.52539 11.55 6.21289 9.1875C6.12539 8.8375 6.21289 8.4 6.47539 8.1375L7.61289 7C7.78789 6.825 7.87539 6.3875 7.78789 6.125C7.43789 5.25 7.26289 4.375 7.08789 3.5C7.08789 3.0625 6.65039 2.7125 6.21289 2.7125ZM16.6254 8.8375C16.1879 8.8375 15.8379 8.575 15.7504 8.1375C15.4879 6.7375 14.3504 5.6875 12.9504 5.3375C12.5129 5.25 12.1629 4.8125 12.2504 4.2875C12.3379 3.85 12.7754 3.5 13.3004 3.5875C15.4004 4.025 17.0629 5.6 17.4129 7.7C17.5004 8.1375 17.2379 8.6625 16.7129 8.75C16.7129 8.75 16.7129 8.8375 16.6254 8.8375ZM20.1254 8.75C19.6879 8.75 19.3379 8.4 19.2504 7.9625C18.9004 4.725 16.3629 2.1875 13.0379 1.75C12.6004 1.6625 12.2504 1.225 12.2504 0.7875C12.2504 0.35 12.7754 0 13.2129 0C17.3254 0.4375 20.4754 3.5875 20.9129 7.7C21.0004 8.1375 20.6504 8.575 20.1254 8.6625C20.2129 8.75 20.1254 8.75 20.1254 8.75Z"/>
 </svg></span>
-										</div>
-									</div>
-									<div class="catalog-slider-submit">
-										<button class="btn btn-white" type="submit">Отправить<span></span></button>
-									</div>
-								</form>
-								<div class="feedback-popup" id="iForm-popup" style="display:none;">
-									<div class="feedback-popup-wrap"><span class="close-popup"></span>
-										<div class="feedback-popup-title">Отлично, данные отправлены!</div>
-										<div class="feedback-popup-txt">В течении 20 мин, на указанный вами номер, позвонит наш специалист.</div>
-									</div>
-								</div>
-								<script>$(document).ready(function() {
-    $('input#name, input#org, input#city, input#phone, input#email').unbind().blur(function() {
+							</div>
+							<div class="input-group">
+								<input type="email" name="email" placeholder="e-mail" id="email" autocomplete="off"><span class="icon"><svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2.25006 1.5C1.83928 1.5 1.50006 1.83921 1.50006 2.25V11.25C1.50006 11.6608 1.83928 12 2.25006 12H14.2501C14.6609 12 15.0001 11.6608 15.0001 11.25V2.25C15.0001 1.83921 14.6609 1.5 14.2501 1.5H2.25006ZM6.44217e-05 2.25C6.44217e-05 1.01079 1.01085 0 2.25006 0H14.2501C15.4893 0 16.5001 1.01079 16.5001 2.25V11.25C16.5001 12.4892 15.4893 13.5 14.2501 13.5H2.25006C1.01085 13.5 6.44217e-05 12.4892 6.44217e-05 11.25V2.25Z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.13564 1.8199C0.373176 1.48057 0.840824 1.39804 1.18016 1.63558L8.25006 6.58451L15.32 1.63558C15.6593 1.39804 16.127 1.48057 16.3645 1.8199C16.602 2.15924 16.5195 2.62689 16.1802 2.86442L8.68016 8.11442C8.42192 8.29519 8.07821 8.29519 7.81997 8.11442L0.319968 2.86442C-0.0193694 2.62689 -0.101895 2.15924 0.13564 1.8199Z"/>
+</svg></span>
+							</div>
+							<div class="catalog-slider-submit">
+								<button class="btn btn-black" type="submit">скачать каталог<span></span></button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="product-popup-other">
+					<div class="product-popup-other__title">Похожая продукция</div>
+					<div class="catalog-slider-items owl-carousel">
+						<div class="catalog-slider-item"><a class="catalog-slider-link" href="#">
+								<div class="catalog-slider-img"><img src="images/content/item-1.png" alt="item-1"></div>
+								<p>PD121-02</p>
+								<div class="btn">Узнать больше<span></span></div></a></div>
+						<div class="catalog-slider-item"><a class="catalog-slider-link" href="#">
+								<div class="catalog-slider-img"><img src="images/content/item-2.png" alt="item-2"></div>
+								<p>PD121-13</p>
+								<div class="btn">Узнать больше<span></span></div></a></div>
+						<div class="catalog-slider-item"><a class="catalog-slider-link" href="#">
+								<div class="catalog-slider-img"><img src="images/content/item-3.png" alt="item-3"></div>
+								<p>PD121-02</p>
+								<div class="btn">Узнать больше<span></span></div></a></div>
+						<div class="catalog-slider-item"><a class="catalog-slider-link" href="#">
+								<div class="catalog-slider-img"><img src="images/content/item-4.png" alt="item-4"></div>
+								<p>PD121-03</p>
+								<div class="btn">Узнать больше<span></span></div></a></div>
+						<div class="catalog-slider-item"><a class="catalog-slider-link" href="#">
+								<div class="catalog-slider-img"><img src="images/content/item-5.png" alt="item-5"></div>
+								<p>PD121-05</p>
+								<div class="btn">Узнать больше<span></span></div></a></div>
+						<div class="catalog-slider-item"><a class="catalog-slider-link" href="#">
+								<div class="catalog-slider-img"><img src="images/content/item-6.png" alt="item-6"></div>
+								<p>PD121-06</p>
+								<div class="btn">Узнать больше<span></span></div></a></div>
+						<div class="catalog-slider-item"><a class="catalog-slider-link" href="#">
+								<div class="catalog-slider-img"><img src="images/content/item-7.png" alt="item-7"></div>
+								<p>PD121-13</p>
+								<div class="btn">Узнать больше<span></span></div></a></div>
+						<div class="catalog-slider-item"><a class="catalog-slider-link" href="#">
+								<div class="catalog-slider-img"><img src="images/content/item-8.png" alt="item-8"></div>
+								<p>PD121-06</p>
+								<div class="btn">Узнать больше<span></span></div></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>$(document).ready(function() {
+    $('input#name, input#org, input#phone, input#email').unbind().blur(function() {
 
         var id = $(this).attr('id');
         var val = $(this).val();
@@ -496,15 +471,6 @@
                 }
                 break;
             case 'org':
-                var rv_name = /^[a-zA-Zа-яА-Я]+$/;
-
-                if (val.length > 2 && val != '' && rv_name.test(val)) {
-                    $(this).parent().addClass('not_error').removeClass('error');
-                } else {
-                    $(this).parent().removeClass('not_error').addClass('error');
-                }
-                break;
-            case 'city':
                 var rv_name = /^[a-zA-Zа-яА-Я]+$/;
 
                 if (val.length > 2 && val != '' && rv_name.test(val)) {
@@ -534,113 +500,8 @@
         }
 
     });
-
-    $('form#iForm').submit(function(e) {
-
-        e.preventDefault();
-
-        if ($('.not_error').length == 4) {
-
-            $.ajax({
-                url: './send.php',
-                type: 'post',
-                data: $(this).serialize(),
-
-                beforeSend: function(xhr, textStatus) {
-                    $('form#iForm :input').attr('disabled', 'disabled');
-                },
-
-                success: function(response) {
-                    $('form#iForm :input').removeAttr('disabled');
-                    $('#iForm-popup').show();
-                }
-            });
-        } else {
-            return false;
-        }
-    });
-
-    $('form#search').submit(function(e) {
-
-        e.preventDefault();
-
-        if ($('.not_error').length == 1) {
-
-        } else {
-            return false;
-        }
-    });
-
 });
-								</script>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="index-news">
-					<div class="container">
-						<div class="title">
-							<h1>Новости</h1>
-						</div>
-						<div class="news-items owl-carousel"><a class="news-item" href="#" title="Завезены новые цветовые решения">
-								<div class="date">20.06.2019</div>
-								<div class="news-item-img"><img src="images/content/news.jpg" alt="news"></div>
-								<div class="news-item-title">Завезены новые цветовые решения</div>
-								<div class="news-item-subtitle">Значимость этих проблем настолько очевидна, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.</div></a><a class="news-item" href="#" title="Завезены новые цветовые решения">
-								<div class="date">20.06.2019</div>
-								<div class="news-item-img"><img src="images/content/news.jpg" alt="news"></div>
-								<div class="news-item-title">Завезены новые цветовые решения</div>
-								<div class="news-item-subtitle">Значимость этих проблем настолько очевидна, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.</div></a><a class="news-item" href="#" title="Завезены новые цветовые решения">
-								<div class="date">20.06.2019</div>
-								<div class="news-item-img"><img src="images/content/news.jpg" alt="news"></div>
-								<div class="news-item-title">Завезены новые цветовые решения</div>
-								<div class="news-item-subtitle">Значимость этих проблем настолько очевидна, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.</div></a><a class="news-item" href="#" title="Завезены новые цветовые решения">
-								<div class="date">20.06.2019</div>
-								<div class="news-item-img"><img src="images/content/news.jpg" alt="news"></div>
-								<div class="news-item-title">Завезены новые цветовые решения</div>
-								<div class="news-item-subtitle">Значимость этих проблем настолько очевидна, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.</div></a>
-						</div>
-						<div class="news-items-btn"><a class="btn btn-black" href="#">Читать все новости<span></span></a></div>
-					</div>
-				</section>
-				<section class="gallery">
-					<div class="container">
-						<div class="title">
-							<h1>Фотогалерея</h1>
-						</div>
-						<div class="gallery-items owl-carousel">
-							<div class="gallery-item gallery-item__small"><a href="images/content/gallery-1.jpg" data-fancybox="gallery"><picture>
-<source media="(max-width: 1023px)" srcset="images/content/gallery-1.jpg">
-<img src="images/content/gallery-1.jpg" alt="gallery-1">
-</picture></a></div>
-							<div class="gallery-item gallery-item__large"><a href="images/content/gallery-2.jpg" data-fancybox="gallery"><picture>
-<source media="(max-width: 1023px)" srcset="images/content/gallery-2.jpg">
-<img src="images/content/gallery-2.jpg" alt="gallery-2">
-</picture></a></div>
-							<div class="gallery-item gallery-item__small"><a href="images/content/gallery-3.jpg" data-fancybox="gallery"><picture>
-<source media="(max-width: 1023px)" srcset="images/content/gallery-3.jpg">
-<img src="images/content/gallery-3.jpg" alt="gallery-3">
-</picture></a></div>
-							<div class="gallery-item gallery-item__small"><a href="images/content/gallery-4.jpg" data-fancybox="gallery"><picture>
-<source media="(max-width: 1023px)" srcset="images/content/gallery-4.jpg">
-<img src="images/content/gallery-4.jpg" alt="gallery-4">
-</picture></a><a href="images/content/gallery-5.jpg" data-fancybox="gallery"><picture>
-<source media="(max-width: 1023px)" srcset="images/content/gallery-5.jpg">
-<img src="images/content/gallery-5.jpg" alt="gallery-5">
-</picture></a></div>
-							<div class="gallery-item gallery-item__small"><a href="images/content/gallery-6.jpg" data-fancybox="gallery"><picture>
-<source media="(max-width: 1023px)" srcset="images/content/gallery-6.jpg">
-<img src="images/content/gallery-6.jpg" alt="gallery-6">
-</picture></a></div>
-							<div class="gallery-item gallery-item__large"><a href="images/content/gallery-7.jpg" data-fancybox="gallery"><picture>
-<source media="(max-width: 1023px)" srcset="images/content/gallery-7.jpg">
-<img src="images/content/gallery-7.jpg" alt="gallery-7">
-</picture></a></div>
-						</div>
-					</div>
-				</section>
-			</div>
-		</div>
+		</script>
 		<footer>
 			<div class="container">
 				<div class="footer-items">
@@ -705,7 +566,7 @@
 				</div>
 			</div>
 		</footer>
-		<script src="./js/vendor.js?v=1565213768343"></script>
-		<script src="./js/main.js?v=1565213768343"></script>
+		<script src="./js/vendor.js?v=1565215592315"></script>
+		<script src="./js/main.js?v=1565215592315"></script>
 	</body>
 </html>
