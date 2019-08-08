@@ -173,7 +173,7 @@ $(document).ready(() => {
       $textureAnim = $('#texture, .tooltip-two'),
       $pvhAnim = $('#pvh, .tooltip-one'),
       $catalogSlider = $('.catalog-slider-items.owl-carousel'),
-      $input = $('.input-group input'),
+      $input = $('.input-group input, .input-group textarea'),
       $phone = $('input#phone'),
       $newsSlider = $('.news-items.owl-carousel'),
       $sliderBtn = $(".slider-catalog-item"),
@@ -285,7 +285,9 @@ $(document).ready(() => {
   });
   $('#menu').on('click', function () {
     $(this).toggleClass('mobile-btn--open');
+    $(this).closest(".mobile-header").toggleClass("mobile-header--open");
     $('#menu-list').slideToggle();
+    $(".mobile-header").prev().html("<div></div>");
   });
   $('.mobile-header .submenu a').on('click', function () {
     $(this).next().toggleClass('sublist--open');
@@ -331,6 +333,18 @@ $(document).ready(() => {
   });
   $('#pForm .close-popup').on('click', function () {
     $("#pPopup").fadeOut();
+  });
+  jQuery(function ($) {
+    $(document).mouseup(function (e) {
+      // событие клика по веб-документу
+      var div = $(".product-popup-wrap"); // тут указываем ID элемента
+
+      if (!div.is(e.target) // если клик был не по нашему блоку
+      && div.has(e.target).length === 0) {
+        // и не по его дочерним элементам
+        div.parent().fadeOut(); // скрываем его
+      }
+    });
   });
 });
 
